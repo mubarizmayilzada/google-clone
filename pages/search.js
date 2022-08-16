@@ -13,11 +13,7 @@ export default function Search({ results }) {
       <Head>
         <title>{router.query.term} - Search page</title>
       </Head>
-
-      {/* Search Header */}
       <SearchHeader />
-
-      {/* Search web and Images Results */}
       {router.query.searchType === "image" ? (
         <ImageResults results={results} />
       ) : (
